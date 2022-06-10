@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,8 +49,65 @@ table {
   border-spacing: 0;
 }
 
-h1 {
-  color: deeppink;
+.categories {
+  width: 100%;
+}
+.categories h2 {
+  display: inline;
+  margin-right: 5px;
+}
+
+h2 {
+  color: orange;
+  font-style: bold;
+  font-size: 30px;
+}
+
+.grid-container {
+  width: 85%;
+  margin: 0 auto;
+}
+.grid-container h2 {
+  margin-left: 20px;
+}
+.grid-container a {
+  color: blue;
+}
+
+.container-categories {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 50% 50%;
+  height: 450px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+i {
+  color: white;
+  font-size: 80px;
+}
+
+.text-categorie {
+  margin-top: 20px;
+  color: white;
+}
+
+.categorie {
+  display: flex;
+  background-color: #2d4059;
+  margin: 20px 20px 20px 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+/* Prix marché*/
+.choiceCard img {
+  width: 300px;
+  height: 300px;
 }
 
 a {
